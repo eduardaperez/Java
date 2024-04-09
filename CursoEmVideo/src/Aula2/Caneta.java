@@ -1,7 +1,7 @@
 package Aula2;
+//Criando classe, adicionando métodos e atributos e instanciando classe:
 
 public class Caneta {
-    //Criando classe, adicionando métodos e atributos e instanciando classe:
 
     String modelo; //linguagem tipada
     String cor;

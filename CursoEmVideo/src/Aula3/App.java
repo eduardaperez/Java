@@ -1,4 +1,6 @@
 package Aula3;
+//Configurando Visibilidade de atributos e métodos (+privado, -público e #protegido(herança)):
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");

@@ -1,7 +1,7 @@
 package Aula3;
+//Configurando Visibilidade de atributos e métodos (+privado, -público e #protegido(herança)):
 
 public class Caneta {
-    //Configurando Visibilidade de atributos e métodos (+privado, -público e #protegido(herança)):
 
     String modelo; //linguagem tipada //sem nada é público para pacote
     public String cor;

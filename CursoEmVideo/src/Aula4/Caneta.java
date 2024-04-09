@@ -1,7 +1,7 @@
 package Aula4;
+//Métodos Especiais: Getter(acessores), Setter(modificadores) e Construct
 
 public class Caneta {
-    //Métodos Especiais: Getter(acessores), Setter(modificadores) e Construct
 
     public String modelo, cor; //linguagem tipada //sem nada é público para pacote
     private float ponta; //precisa apenas clicar para gerar getters e setters
