@@ -44,7 +44,7 @@ public class ContaBanco {
             this.setAberta(false);
             System.out.println("Conta fechada com sucesso. Aberta = " + this.getAberta());
         } else {
-            System.out.println("Ainda possui valores em conta");
+            System.out.println("Ainda possui valores em aberto");
         }
     }
 
@@ -58,26 +58,32 @@ public class ContaBanco {
     }
 
     public void sacar(float valor) {
-        if (this.getSaldo() >= valor) {
-            this.setSaldo(saldo - valor);
-            System.out.println("Sucesso! Seu novo saldo é: " + this.getSaldo());
-
-        }else {
-            System.out.println("Saldo insuficiente");
+        if (this.getAberta()) {
+            if (this.getSaldo() >= valor) {
+                this.setSaldo(saldo - valor);
+                System.out.println("Sucesso! Seu novo saldo é: " + this.getSaldo());
+    
+            }else {
+                System.out.println("Saldo insuficiente");
+            }          
+        } else {
+            System.out.println("Conta não está ativa");
         }
     }
 
     public void pagarMensal() {
-        if (this.tipo == "cc") {
-            this.setSaldo(getSaldo() - 12f);
-            System.out.println("Sucesso! Seu novo saldo é: " + this.getSaldo());
-        } else if (this.tipo == "cp") {
-            this.setSaldo(getSaldo() - 20f);
-            System.out.println("Sucesso! Seu novo saldo é: " + this.getSaldo());
+        if (this.getAberta()) {
+            if (this.tipo == "cc") {
+                this.setSaldo(getSaldo() - 12f);
+                System.out.println("Sucesso! Seu novo saldo é: " + this.getSaldo());
+            } else if (this.tipo == "cp") {
+                this.setSaldo(getSaldo() - 20f);
+                System.out.println("Sucesso! Seu novo saldo é: " + this.getSaldo());
+            } 
+        } else {
+            System.out.println("Conta não está ativa");
         }
     }
-
-
 
 
     public int getNumConta() {
@@ -110,5 +116,4 @@ public class ContaBanco {
     public void setAberta(boolean aberta) {
         this.aberta = aberta;
     }
-    
 }
