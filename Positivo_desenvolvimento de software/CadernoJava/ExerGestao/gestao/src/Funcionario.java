@@ -1,5 +1,3 @@
-package ExeGestao;
-
 public class Funcionario {
     private String nome, cargo;
     private int cpf;
@@ -39,4 +37,11 @@ public class Funcionario {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario [nome=" + nome + ", cargo=" + cargo + ", cpf=" + cpf + ", idade=" + idade + "]";
+    }
+
+    
 }
