@@ -1,4 +1,4 @@
-package Aula7;
+package Aula7E8;
 
 public class App {
     public static void main(String[] args) {
@@ -16,8 +16,13 @@ public class App {
 
         l[5] = new Lutador("Nerdart", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);
 
-        l[3].perderLuta();
-        l[3].Status();
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(l[2], l[3]);
+        UEC01.lutar();
+
+        l[0].Status();
+        l[1].Status();
+
     }
 
 }

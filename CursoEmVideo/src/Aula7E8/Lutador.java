@@ -1,4 +1,4 @@
-package Aula7;
+package Aula7E8;
 
 public class Lutador {
     private String nome, nacionalidade, categoria;
@@ -25,8 +25,9 @@ public class Lutador {
         System.out.println(getAltura() + " de altura e");
         System.out.println(getPeso() + " kilos");
         System.out.println("Já obteve " + getVitorias() + " vitórias");
-        System.out.println("E apenas" + getAltura() + " derrotaas");
+        System.out.println("E apenas " + getDerrotas() + " derrotas");
         System.out.println("Esse é " + getNome() + "!!!");
+        System.out.println("---------------------------");
     }
 
     public void Status() {
@@ -35,6 +36,7 @@ public class Lutador {
         System.out.println("Vitórias: " + getVitorias());
         System.out.println("Derrotas: " + getDerrotas());
         System.out.println("Empates: " + getEmpates());
+        System.out.println("---------------------------");
     }
 
     public void ganharLuta() {
