@@ -11,6 +11,7 @@ package Aula12;
  * Sobreposição = sobrescrever com @override
  *  -> acontece quando substituimos um método de uma superclasse na sua subclasse, usando a mesma assinatura
  * Sobrecarga =  
+ * -> usamos assinatura diferente dentro da mesma classe.
  */
 
 import Aula12.Mamifero.Cachorro;
